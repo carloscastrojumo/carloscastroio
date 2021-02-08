@@ -1,0 +1,112 @@
+baseURL = "https://carloscastro.io"
+title = "Breaking things"
+paginate = 5
+theme = "PaperMod"
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+disableXML = true
+
+[languages.en]
+languageName = "English"
+weight = 1
+
+[[languages.en.menu.main]]
+name = "Archive"
+url = "archives"
+weight = 5
+
+[[languages.en.menu.main]]
+name = "Search"
+url = "search/"
+weight = 10
+
+[[languages.en.menu.main]]
+name = "Tags"
+url = "tags/"
+weight = 10
+
+[[languages.en.menu.main]]
+name = "Categories"
+url = "categories/"
+weight = 10
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[params]
+env = "production"
+description = "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+author = "Theme PaperMod"
+defaultTheme = "auto"
+disableThemeToggle = true
+ShowShareButtons = false
+ShowReadingTime = false
+displayFullLangName = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowToc = true
+images = [ "papermod-cover.png" ]
+
+  [params.profileMode]
+  enabled = true
+  title = "Carlos Castro"
+  subtitle = "Just another SysDev blog"
+  imageUrl = "https://media-exp1.licdn.com/dms/image/C5603AQF0CZSvgvjyOA/profile-displayphoto-shrink_400_400/0/1562656532226?e=1618444800&v=beta&t=RNZkObzyEXPhDb2HQIesUw-tSqR6kJwB-M_Ib1uH6kM"
+  imageTitle = "my image"
+  imageWidth = 200
+  imageHeight = 200
+
+    [[params.profileMode.buttons]]
+    name = "Archives"
+    url = "archives"
+
+    [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "tags"
+
+  [params.homeInfoParams]
+  Title = "Breaking things"
+  Content = """
+Welcome to demo of hugo's theme PaperMod. - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX. - Do give a 🌟 on Github ! - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+"""
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/carloscastrojumo"
+
+  [[params.socialIcons]]
+  name = "Linkedin"
+  url = "https://www.linkedin.com/in/carlosmiguelcastro/"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy.vimeo]
+disabled = false
+simple = true
+
+[privacy.twitter]
+disabled = false
+enableDNT = true
+simple = true
+
+[privacy.instagram]
+disabled = false
+simple = true
+
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
+
+[services.instagram]
+disableInlineCSS = true
+
+[services.twitter]
+disableInlineCSS = true
