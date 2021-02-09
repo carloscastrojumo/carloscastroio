@@ -5,7 +5,7 @@ author: "Carlos Castro"
 tags: ["AWS RDS", "PostgreSQL", "Bucardo"]
 categories: ["AWS"]
 description: "How to migrate AWS RDS databases with Bucardo"
-draft: true
+draft: false
 showToc: false
 TocOpen: false
 hidemeta: false
@@ -185,7 +185,7 @@ Add the tables to be migrated from the source database (list separated by space)
 $ bucardo add tables public.phonebook db=src_db
 ```
 
-Create the herd. Herds are used to designate the “source” of a sync.
+Create the herd. Herds are used to designate the “source” of a sync (list separated by space).
 
 ```sh
 $ bucardo add herd copying_herd public.phonebook
