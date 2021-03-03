@@ -46,7 +46,7 @@ terraform {
         bucket = "my-remote-state-bucket"
         key    = "my-remote-state-key"
         region = "eu-west-1"
-        dynamodb_table = "jumo.terraform.lock.eu-dev" # for state lock
+        dynamodb_table = "my.terraform.lock" # for state lock
         encrypt = true
     }
 }

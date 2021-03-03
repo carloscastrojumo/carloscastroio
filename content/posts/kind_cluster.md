@@ -1,5 +1,5 @@
 ---
-title: "Kind_cluster"
+title: "Kind cluster - Quick demo"
 date: 2021-02-19T17:17:26Z
 author: "Carlos Castro"
 tags: ["Docker", "kind", "e2e"]
